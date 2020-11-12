@@ -21,7 +21,7 @@ FROM users;
 
 -- Query 5 InsertAuth
 INSERT INTO author
-VALUES(12, 'Kobe Bryant');
+VALUES(12 ,'Kobe Bryant');
 
 -- Query 6 InsertBook
 INSERT INTO books
@@ -115,12 +115,7 @@ UPDATE books
 set b_available = 2
 where b_bookid = 6;
 
--- Query 21 userageandbookid
-Select u_age, b_bookid 
-From users, books 
-Where b_bookid <= u_age; 
-
--- Query 22 checkAvalBook
+-- Query 21 checkAvalBook
 SELECT b_title
 FROM books 
 WHERE b_title = 'Pale Fire'
